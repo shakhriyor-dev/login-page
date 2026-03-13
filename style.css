@@ -1,3 +1,4 @@
+/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -14,8 +15,7 @@ body {
     overflow: hidden;
 }
 
-/* particles background */
-
+/* Particles Background */
 #particles-js {
     position: absolute;
     width: 100%;
@@ -23,8 +23,42 @@ body {
     z-index: 0;
 }
 
-/* login card */
+/* Floating Neon Shapes */
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    animation: float 10s infinite alternate;
+    z-index: 1;
+}
 
+.shape1 {
+    width: 300px;
+    height: 300px;
+    background: #00ffff;
+    top: -100px;
+    left: -100px;
+}
+
+.shape2 {
+    width: 300px;
+    height: 300px;
+    background: #ff00ff;
+    bottom: -100px;
+    right: -100px;
+}
+
+@keyframes float {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(80px);
+    }
+}
+
+/* Login Card */
 .card {
     position: relative;
     z-index: 2;
@@ -37,15 +71,13 @@ body {
     transition: 0.4s;
 }
 
-/* 3D hover */
-
+/* 3D Hover Effect */
 .card:hover {
     transform: rotateY(10deg) rotateX(10deg) scale(1.05);
     box-shadow: 0 0 50px cyan;
 }
 
-/* title */
-
+/* Title */
 h2 {
     color: white;
     text-align: center;
@@ -53,8 +85,7 @@ h2 {
     text-shadow: 0 0 10px cyan;
 }
 
-/* inputs */
-
+/* Input Boxes */
 .inputBox {
     position: relative;
     margin: 25px 0;
@@ -85,8 +116,7 @@ h2 {
     color: cyan;
 }
 
-/* neon button */
-
+/* Neon Button */
 button {
     width: 100%;
     padding: 12px;
@@ -105,8 +135,7 @@ button:hover {
     box-shadow: 0 0 20px cyan;
 }
 
-/* cursor glow */
-
+/* Cursor Glow */
 .cursor {
     position: fixed;
     width: 20px;

@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    overflow: hidden;
+}
+
+/* floating background */
+
+.background span {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    animation: move 20s linear infinite;
+}
+
+.background span:nth-child(1) {
+    top: 10%;
+    left: 20%;
+}
+
+.background span:nth-child(2) {
+    top: 60%;
+    left: 70%;
+    animation-duration: 25s;
+}
+
+.background span:nth-child(3) {
+    top: 40%;
+    left: 10%;
+    animation-duration: 18s;
+}
+
+.background span:nth-child(4) {
+    top: 80%;
+    left: 40%;
+    animation-duration: 22s;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(-100px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+/* login card */
+
+.login-card {
+    position: relative;
+    width: 320px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: white;
+}
+
+/* input */
+
+.inputBox {
+    position: relative;
+    margin: 30px 0;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+.inputBox label {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.inputBox input:focus~label,
+.inputBox input:valid~label {
+    top: -15px;
+    font-size: 12px;
+}
+
+/* button */
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #ff6ec4, #7873f5);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.signup {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signup a {
+    color: #fff;
+    font-weight: bold;
+}

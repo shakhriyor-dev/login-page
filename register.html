@@ -1,11 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Neon UI</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  </head>
+  <body>
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Floating Neon Shapes -->
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+
+    <!-- Registration Card -->
+    <div class="card">
+      <h2>Register</h2>
+
+      <div class="inputBox">
+        <input type="text" required />
+        <label>Username</label>
+      </div>
+
+      <div class="inputBox">
+        <input type="email" required />
+        <label>Email</label>
+      </div>
+
+      <div class="inputBox">
+        <input type="password" required />
+        <label>Password</label>
+      </div>
+
+      <div class="inputBox">
+        <input type="password" required />
+        <label>Confirm Password</label>
+      </div>
+
+      <button>Sign Up</button>
+    </div>
+
+    <!-- Cursor Glow -->
+    <div class="cursor"></div>
+
+    <script src="register.js"></script>
+  </body>
 </html>
